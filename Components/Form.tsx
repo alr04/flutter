@@ -37,7 +37,7 @@ const Form: React.FC<FormProps> = ({ placeholder, isComment, postId }) => {
 
       await axios.post(url, { body });
 
-      toast.success("Tweet Created");
+      toast.success("Squawk Created");
 
       setBody("");
       mutatePosts();
@@ -88,7 +88,7 @@ const Form: React.FC<FormProps> = ({ placeholder, isComment, postId }) => {
             />
             <div className="mt-4 flex flex-row justify-end">
               <Button
-                label="Tweet"
+                label="Squawk"
                 disabled={isLoading || !body}
                 onClick={onSubmit}
               />
@@ -105,7 +105,7 @@ const Form: React.FC<FormProps> = ({ placeholder, isComment, postId }) => {
             mb-4
             font-bold"
           >
-            Welcome to Twitter
+            Welcome to Fluttter
           </h1>
           <div className="flex flex-row items-center justify-center gap-4">
             <Button label="Login" onClick={loginModal.onOpen} />

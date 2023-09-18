@@ -57,7 +57,7 @@ const SidebarTweetButton = () => {
         tezt-[20px]
         "
         >
-          Tweet
+          Squawk
         </p>
       </div>
     </div>

@@ -32,6 +32,7 @@ const EditModal = () => {
     currentUser?.bio,
     currentUser?.profileImage,
     currentUser?.coverImage,
+    currentUser?.setCoverImage,
   ]);
 
   const [isLoading, setIsLoading] = useState(false);
