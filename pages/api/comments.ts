@@ -41,7 +41,7 @@ import prisma from '@/libs/prismadb'
             if (post?.userId) {
                 await prisma.notification.create({
                     data: {
-                        body: "Someone replied your squawk",
+                        body: "Someone replied your tweet",
                         userId: post.userId
                     }
                 })
