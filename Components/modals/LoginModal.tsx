@@ -61,7 +61,7 @@ const LoginModal = () => {
   const footerContent = (
     <div className="text-neutral-400 text-center mt-4">
       <p>
-        First time using Flutter?
+        First time using Twitter?
         <span
           onClick={onToggle}
           className="
