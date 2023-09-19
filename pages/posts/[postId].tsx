@@ -1,7 +1,7 @@
-import Form from "@/Components/Form";
-import Header from "@/Components/Header";
-import CommentFeed from "@/Components/posts/CommentFeed";
-import PostItem from "@/Components/posts/PostItem";
+import Form from "@/components/Form";
+import Header from "@/components/Header";
+import CommentFeed from "@/components/posts/CommentFeed";
+import PostItem from "@/components/posts/PostItem";
 import usePost from "@/hooks/usePost";
 import { useRouter } from "next/router";
 import { ClipLoader } from "react-spinners";
@@ -21,12 +21,12 @@ const PostView = () => {
   }
   return (
     <>
-      <Header label="Squawk" showBackArrow />
+      <Header label="Tweet" showBackArrow />
       <PostItem data={fetchedPost} />
       <Form
         postId={postId as string}
         isComment
-        placeholder="Squawk your reply"
+        placeholder="Tweet your reply"
       />
       <CommentFeed comments={fetchedPost?.comments} />
     </>
