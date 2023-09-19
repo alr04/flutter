@@ -12,9 +12,9 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <SessionProvider session={pageProps.session}>
       <Toaster />
-      <EditModal />
       <RegisterModal />
       <LoginModal />
+      <EditModal />
       <Layout>
         <Component {...pageProps} />
       </Layout>
